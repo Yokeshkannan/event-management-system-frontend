@@ -1,0 +1,15 @@
+{
+  "name": "event-management-platform",
+  "version": "1.0.0",
+  "description": "Root package.json to run both frontend and backend concurrently",
+  "main": "index.js",
+  "scripts": {
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "npm start & npm run dev:frontend",
+    "start": "start cmd.exe /c \"npm run dev:backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
